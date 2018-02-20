@@ -32,18 +32,6 @@ class KanjiDetailViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        
-        guard let listViewController = segue.destination as? KanjiListViewController else {
-            
-            return
-        }
-        
-        listViewController.shouldOpenDetailsOnCellSelection = false
-        listViewController.word = sender as? String
-    }
-    
 }
 
 // MARK: - UITableViewDataSource
