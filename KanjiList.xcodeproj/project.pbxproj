@@ -82,8 +82,6 @@
 			children = (
 				437264321FAD04F400A22393 /* AppDelegate.swift */,
 				437264331FAD04F400A22393 /* Info.plist */,
-				877A94D0203C3DAB003318D7 /* Coordinator.swift */,
-				877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -124,6 +122,15 @@
 			path = KanjiList;
 			sourceTree = "<group>";
 		};
+		877A94DE203C621B003318D7 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				877A94D0203C3DAB003318D7 /* Coordinator.swift */,
+				877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		C1345AF11F9E08B900612B82 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				437264311FAD04F400A22393 /* Application */,
+				877A94DE203C621B003318D7 /* Coordinators */,
 				4372642E1FAD04F400A22393 /* Model */,
 				437264341FAD04F400A22393 /* Resources */,
 				437264361FAD04F400A22393 /* Screens */,
