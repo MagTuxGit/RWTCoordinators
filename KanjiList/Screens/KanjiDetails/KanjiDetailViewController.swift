@@ -1,7 +1,12 @@
 import UIKit
 
+protocol KanjiDetailViewControllerDelegate: class {
+    func kanjiDetailViewControllerDidSelectWord(_ word: String)
+}
 
 class KanjiDetailViewController: UIViewController {
+    
+    weak var delegate: KanjiDetailViewControllerDelegate?
     
     var selectedKanji: Kanji? {
         didSet {
@@ -90,16 +95,15 @@ extension KanjiDetailViewController: UITableViewDataSource {
 extension KanjiDetailViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        guard indexPath.section == 1 else {
-            return
+        defer {
+            tableView.deselectRow(at: indexPath, animated: true)
         }
         
-        if let word = selectedKanji?.examples[indexPath.row].word {
-            performSegue(withIdentifier: "exampleKanjiList", sender: word)
+        guard indexPath.section == 1,
+            let word = selectedKanji?.examples[indexPath.row].word else {
+                return
         }
-        
-        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.kanjiDetailViewControllerDidSelectWord(word)
     }
     
 }

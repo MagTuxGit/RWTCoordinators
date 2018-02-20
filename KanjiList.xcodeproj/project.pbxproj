@@ -23,6 +23,7 @@
 		877A94D7203C59BB003318D7 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */; };
 		877A94D9203C5BA6003318D7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877A94D8203C5BA6003318D7 /* Launch Screen.storyboard */; };
 		877A94E0203C63BA003318D7 /* AllKanjiListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A94DF203C63BA003318D7 /* AllKanjiListCoordinator.swift */; };
+		877A94E2203C64DF003318D7 /* KanjiDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A94E1203C64DF003318D7 /* KanjiDetailCoordinator.swift */; };
 		C1345B051F9E08BA00612B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1345B041F9E08BA00612B82 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		877A94D8203C5BA6003318D7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		877A94DF203C63BA003318D7 /* AllKanjiListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllKanjiListCoordinator.swift; sourceTree = "<group>"; };
+		877A94E1203C64DF003318D7 /* KanjiDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailCoordinator.swift; sourceTree = "<group>"; };
 		C1345AFA1F9E08BA00612B82 /* KanjiList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1345B041F9E08BA00612B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				877A94D0203C3DAB003318D7 /* Coordinator.swift */,
 				877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */,
 				877A94DF203C63BA003318D7 /* AllKanjiListCoordinator.swift */,
+				877A94E1203C64DF003318D7 /* KanjiDetailCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -192,7 +195,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = Kolos;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					C1345AF91F9E08BA00612B82 = {
 						CreatedOnToolsVersion = 9.0;
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				877A94D1203C3DAB003318D7 /* Coordinator.swift in Sources */,
+				877A94E2203C64DF003318D7 /* KanjiDetailCoordinator.swift in Sources */,
 				4323D3E01FAD0CF600F0FB1E /* WordExampleTableViewCell.swift in Sources */,
 				4323D3E41FAD110200F0FB1E /* KanjiDataTableViewCell.swift in Sources */,
 				4372643E1FAD04F400A22393 /* AppDelegate.swift in Sources */,
