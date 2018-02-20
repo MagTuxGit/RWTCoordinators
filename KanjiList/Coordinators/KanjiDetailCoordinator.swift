@@ -18,8 +18,19 @@ class KanjiDetailCoordinator: Coordinator {
         let kanjiDetailViewController = KanjiDetailViewController(nibName: nil, bundle: nil)
         kanjiDetailViewController.title = "Kanji details"
         kanjiDetailViewController.selectedKanji = kanji
-        
+        kanjiDetailViewController.delegate = self
         presenter.pushViewController(kanjiDetailViewController, animated: true)
         self.kanjiDetailViewController = kanjiDetailViewController
+    }
+}
+
+extension KanjiDetailCoordinator: KanjiDetailViewControllerDelegate {
+    func kanjiDetailViewControllerDidSelectWord(_ word: String) {
+        let wordKanjiListViewController = KanjiListViewController(nibName: nil, bundle: nil)
+        let kanjiForWord = kanjiStorage.kanjiForWord(word)
+        wordKanjiListViewController.kanjiList = kanjiForWord
+        wordKanjiListViewController.title = word
+        
+        presenter.pushViewController(wordKanjiListViewController, animated: true)
     }
 }
