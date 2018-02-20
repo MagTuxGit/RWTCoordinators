@@ -22,6 +22,7 @@
 		877A94D5203C3E62003318D7 /* KanjiListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877A94D4203C3E62003318D7 /* KanjiListViewController.xib */; };
 		877A94D7203C59BB003318D7 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */; };
 		877A94D9203C5BA6003318D7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877A94D8203C5BA6003318D7 /* Launch Screen.storyboard */; };
+		877A94E0203C63BA003318D7 /* AllKanjiListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A94DF203C63BA003318D7 /* AllKanjiListCoordinator.swift */; };
 		C1345B051F9E08BA00612B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1345B041F9E08BA00612B82 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		877A94D4203C3E62003318D7 /* KanjiListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KanjiListViewController.xib; sourceTree = "<group>"; };
 		877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		877A94D8203C5BA6003318D7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		877A94DF203C63BA003318D7 /* AllKanjiListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllKanjiListCoordinator.swift; sourceTree = "<group>"; };
 		C1345AFA1F9E08BA00612B82 /* KanjiList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1345B041F9E08BA00612B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 			children = (
 				877A94D0203C3DAB003318D7 /* Coordinator.swift */,
 				877A94D6203C59BB003318D7 /* ApplicationCoordinator.swift */,
+				877A94DF203C63BA003318D7 /* AllKanjiListCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				4372643E1FAD04F400A22393 /* AppDelegate.swift in Sources */,
 				5D1B73EF1FC47B0600327A3F /* KanjiStorage.swift in Sources */,
 				877A94D7203C59BB003318D7 /* ApplicationCoordinator.swift in Sources */,
+				877A94E0203C63BA003318D7 /* AllKanjiListCoordinator.swift in Sources */,
 				437264421FAD04F400A22393 /* KanjiDetailViewController.swift in Sources */,
 				437264431FAD04F400A22393 /* KanjiListViewController.swift in Sources */,
 				4372643C1FAD04F400A22393 /* Kanji.swift in Sources */,
